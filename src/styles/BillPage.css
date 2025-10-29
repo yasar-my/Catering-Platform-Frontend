@@ -1,0 +1,238 @@
+.main{
+   background: url('../img/back8.png') no-repeat center center; /* oru image path */
+  background-size: cover;   /* Full screen la stretch aagum */
+  height: fit-content;            /* Full screen height */
+  width: 100%; 
+}
+.bill-container {
+  width: 70vw;
+  max-width: 820px;
+  min-width: 320px;
+  margin: 42px auto 24px auto;
+  padding: 36px 32px;
+  background: rgba(51,34,21,0.98); /* Deep brown box */
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(58,39,19,0.13);
+  border: 2.5px solid #eab862;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #ffd897;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bill-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.bill-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #eab862; /* Gold header */
+  margin: 0;
+  letter-spacing: 0.4px;
+}
+
+.bill-main {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bill-details {
+  width: 100%;
+  margin-top: 10px;
+}
+
+label, .input-label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #ffd897;
+}
+
+.people-count-input {
+  margin-left: 10px;
+  padding: 9px 18px;
+  border-radius: 10px;
+  border: 2px solid #eab862;
+  font-size: 18px;
+  font-weight: 600;
+  width: 130px;
+  background: #fff9e6;
+  color: #4b260f;
+}
+
+.rate-summary, .total-summary, .advance-summary, .people-fixed {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #ffd897;
+  font-weight: 700;
+}
+
+.plate-rate, .total-amount, .advance-amount, .fixed-value {
+  background: #fdcb6e;
+  color: #3a2713;
+  font-weight: 700;
+  padding: 4px 21px;
+  border-radius: 10px;
+  margin-left: 12px;
+  font-size: 18px;
+  display: inline-block;
+  box-shadow: 0 1px 6px rgba(58,39,19,0.10);
+}
+
+.notice {
+  margin: 18px 0 16px 0;
+  background: #e17055;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.book-btn {
+  margin-top: 18px;
+  padding: 16px 54px;
+  background: #eab862;
+  color: #3a2713;
+  border: none;
+  border-radius: 28px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 9px rgba(58,39,19,0.14);
+  transition: background 0.18s, color 0.18s;
+  letter-spacing: 0.18px;
+}
+.book-btn:hover {
+  background: #3a2713;
+  color: #eab862;
+  box-shadow: 0 4px 16px rgba(234,184,98,0.27);
+}
+
+.bill-form .user-details {
+  width: 100%;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.bill-form .user-details input,
+.bill-form .user-details textarea {
+  padding: 10px 15px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: 1.8px solid #eab862;
+  background: #fff9e6;
+  color: #4b260f;
+  width: 100%;
+  font-family: inherit;
+}
+
+.bill-form .user-details textarea {
+  resize: vertical;
+  min-height: 38px;
+}
+
+.input-date {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.7px solid #eab862;
+  background: #fff9e6;
+  color: #4b260f;
+  font-size: 17px;
+  margin-bottom: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.meal-times-group {
+  margin-bottom: 20px;
+}
+.input-label {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffd897;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.meal-options {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.meal-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: 1.7px solid #eab862;
+  background: #fff7ef;
+  font-size: 15px;
+  color: #53361a;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.meal-checkbox-label:hover {
+  background: #ffefd4;
+}
+
+.meal-checkbox {
+  accent-color: #b07b3e;
+  width: 20px;
+  height: 20px;
+}
+
+.meal-checkbox-text {
+  user-select: none;
+}
+
+@media (min-width: 700px) {
+  .bill-container {
+    width: 70vw;
+    max-width: 820px;
+    padding: 48px;
+  }
+  .bill-details {
+    font-size: 19px;
+  }
+  .bill-header h2 {
+    font-size: 36px;
+  }
+}
+.bill-form .user-details select {
+  padding: 10px 15px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: 1.8px solid #eab862;
+  background: #fff9e6;
+  color: #4b260f;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 600;
+  margin-bottom: 2px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.bill-form .user-details select:focus {
+  border-color: #b07b3e;
+  box-shadow: 0 0 0 2px #eab86255;
+}
+
+.bill-form .user-details option {
+  background: #fff9e6;
+  color: #3a2713;
+  font-size: 16px;
+}

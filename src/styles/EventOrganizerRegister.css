@@ -1,0 +1,105 @@
+.main{
+   background: url('../img/back2.png') no-repeat center center; /* oru image path */
+  background-size: cover;   /* Full screen la stretch aagum */
+  height: fit-content;            /* Full screen height */
+  width: 100%; 
+  padding-top: 10px;
+}
+.event-org-container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #362510;
+  border-radius: 14px;
+  color: #ffd875;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.event-org-form input,
+.event-org-form select,
+.event-org-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #d1a124;
+  font-size: 16px;
+  color: #362510;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.event-org-form textarea {
+  resize: vertical;
+}
+
+.event-org-form .file-label {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #ffd875;
+}
+
+.event-org-form .file-label input[type="file"] {
+  margin-top: 6px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #d1a124;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.event-org-form button {
+  width: 100%;
+  background-color: #d1a124;
+  border: none;
+  padding: 16px;
+  font-weight: bold;
+  color: #362510;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.event-org-form button:hover {
+  background-color: #e6b400;
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 900px) {
+  .event-org-container {
+    max-width: 600px;
+    padding: 35px;
+  }
+  .event-org-form input,
+  .event-org-form select,
+  .event-org-form textarea {
+    font-size: 18px;
+    padding: 16px 22px;
+  }
+  .event-org-form button {
+    font-size: 20px;
+    padding: 18px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+  .event-org-container {
+    max-width: 700px;
+    padding: 40px;
+  }
+  .event-org-form input,
+  .event-org-form select,
+  .event-org-form textarea {
+    font-size: 20px;
+    padding: 18px 26px;
+  }
+  .event-org-form button {
+    font-size: 22px;
+    padding: 20px;
+  }
+}

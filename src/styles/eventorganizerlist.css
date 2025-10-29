@@ -1,0 +1,136 @@
+.organizer-list-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f3f2ec;
+}
+.organizer-list-card {
+  background: #fff9e6;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(51,34,21,0.11);
+  margin: 48px 0;
+  padding: 26px 10px;
+  width: 95vw;
+  max-width: 1200px;
+}
+.organizer-list-card h2 {
+  margin-bottom: 18px;
+  text-align: center;
+  color: #3a2713;
+}
+.organizer-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+.organizer-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+.organizer-table th,
+.organizer-table td {
+  border: 1.4px solid #eab862;
+  padding: 8px 5px;
+  font-size: 0.98em;
+  text-align: left;
+  word-break: break-word;
+}
+.organizer-table th {
+  background: #f8e0b6;
+  color: #53361a;
+  font-weight: 700;
+}
+
+/* Tablet */
+@media (max-width: 1050px) {
+  .organizer-list-card {
+    padding: 20px 1vw;
+    max-width: 99vw;
+  }
+  .organizer-table th, .organizer-table td { font-size: 0.93em; }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .organizer-list-card {
+    padding: 8px 0;
+    margin: 12px 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .organizer-table th, .organizer-table td { font-size: 0.80em; }
+  .organizer-table-wrap { overflow-x: auto; }
+}
+
+
+.organizer-list-bg {
+  min-height: 100vh;
+  background: #fffbe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.organizer-list-card {
+  background: #fff;
+  border-radius: 10px;
+  width: 95vw;
+  max-width: 1200px;
+  padding: 32px 22px 22px 22px;
+  box-shadow: 0 5px 26px 0 rgba(34,17,2,0.11);
+  margin: 32px 0;
+}
+
+.organizer-table-wrap {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.organizer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #462b12;
+}
+
+.organizer-table th,
+.organizer-table td {
+  border: 1px solid #e8e0cd;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.organizer-table th {
+  background: #3e2100;
+  color: #ffd700;
+}
+
+.organizer-delete-btn {
+  padding: 5px 16px;
+  background: #d90037;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.organizer-delete-btn:hover {
+  background: #b70018;
+}
+
+@media (max-width: 800px) {
+  .organizer-list-card {
+    width: 98vw;
+    padding: 14px 2vw 13px 2vw;
+    max-width: 99vw;
+  }
+  .organizer-table th,
+  .organizer-table td {
+    padding: 4px 3px;
+    font-size: 0.91em;
+  }
+}

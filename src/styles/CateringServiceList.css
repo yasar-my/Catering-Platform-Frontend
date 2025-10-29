@@ -1,0 +1,134 @@
+.catering-list-bg {
+  min-height: 100vh;
+  width: 100vw;
+  color: #ffd875;
+  box-sizing: border-box;
+  padding: 0;
+  background: url('../img/back6.png') no-repeat center center; /* oru image path */
+  background-size: cover;   /* Full screen la stretch aagum */
+  height: fit-content;            /* Full screen height */
+  width: 100%;
+}
+
+.catering-list-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fce77d;
+  text-align: center;
+  margin: 38px 0 18px 0;
+  letter-spacing: 1.2px;
+}
+
+.catering-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 28px;
+  padding: 30px 60px;
+}
+
+.catering-card {
+  background: rgb(154, 110, 1);
+  border-radius: 15px;
+  box-shadow: 0 4px 36px 12px rgba(19, 14, 4, 0.17);
+  overflow: hidden;
+  transition: transform 0.18s, box-shadow 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catering-card:hover {
+  transform: scale(1.045);
+  box-shadow: 0 6px 38px 16px rgba(191,159,58,0.15);
+}
+
+.catering-img-wrap {
+  width: 100%;
+  height: 130px;
+  background: #ddd5bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catering-img-wrap img {
+  width: 90%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 11px;
+  box-shadow: 0 3px 14px rgba(191,159,58,0.14);
+}
+
+.catering-card-details {
+  padding: 24px 8px 18px 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catering-card-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 7px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.catering-card-location {
+  font-size: 1rem;
+  color: #d3bf8d;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* -- Responsive Styles -- */
+/* Tablet 2 columns */
+@media (max-width: 900px) {
+  .catering-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 13px;
+    padding: 16px 14vw;
+  }
+  .catering-list-title { font-size: 1.45rem; }
+}
+/* Mobile 1 column */
+@media (max-width: 600px) {
+  .catering-grid { grid-template-columns: 1fr; gap: 20px 5px; padding: 10px 5vw; }
+  .catering-card-details { padding: 12px 2px 16px 2px; }
+  .catering-list-title { font-size: 1.07rem; margin: 22px 0 14px 0;}
+}
+
+.catering-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.orders-btn {
+  background: #e17055;
+  color: #fff;
+  border: none;
+  border-radius: 17px;
+  padding: 8px 21px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s;
+  box-shadow: 0 1px 6px rgba(30,30,30,0.10);
+}
+.orders-btn:hover {
+  background: #7e5c45;
+}
+@media (max-width: 540px) {
+  .catering-list-header {
+    flex-direction: column;
+    gap: 13px;
+    align-items: stretch;
+  }
+  .orders-btn {
+    width: 100%;
+    padding: 11px 0;
+  }
+}

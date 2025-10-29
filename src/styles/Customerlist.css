@@ -1,0 +1,138 @@
+.customer-list-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f8f6ef;
+}
+.customer-list-card {
+  background: #fff9e6;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(51,34,21,0.11);
+  margin: 48px 0;
+  padding: 30px 24px;
+  width: 90vw;
+  max-width: 700px;
+}
+.customer-list-card h2 {
+  margin-bottom: 18px;
+  text-align: center;
+  color: #3a2713;
+}
+
+.customer-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+.customer-table th,
+.customer-table td {
+  border: 1.4px solid #eab862;
+  padding: 10px 6px;
+  font-size: 1em;
+  text-align: left;
+  word-break: break-word;
+}
+.customer-table th {
+  background: #f8e0b6;
+  color: #53361a;
+  font-weight: 700;
+}
+
+/* Tablet responsive */
+@media (max-width: 900px) {
+  .customer-list-card {
+    padding: 18px 5vw;
+    margin: 22px 0;
+  }
+  .customer-table th, .customer-table td { font-size: 0.97em; padding: 7px 3px; }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .customer-list-card {
+    padding: 12px 0;
+    margin: 9px 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .customer-table th, .customer-table td { font-size: 0.88em; padding: 6px 2px; }
+  .customer-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.customer-list-bg {
+  min-height: 100vh;
+  background: #fffbe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-list-card {
+  background: #fff;
+  border-radius: 10px;
+  width: 85vw;
+  max-width: 900px;
+  padding: 32px 22px 22px 22px;
+  box-shadow: 0 5px 26px 0 rgba(34,17,2,0.11);
+  margin: 32px 0;
+}
+
+.customer-table-wrap {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #462b12;
+}
+
+.customer-table th,
+.customer-table td {
+  border: 1px solid #e8e0cd;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.customer-table th {
+  background: #3e2100;
+  color: #ffd700;
+}
+
+.customer-delete-btn {
+  padding: 5px 16px;
+  background: #d90037;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.customer-delete-btn:hover {
+  background: #b70018;
+}
+
+@media (max-width: 600px) {
+  .customer-list-card {
+    width: 99vw;
+    padding: 15px 0 13px 0;
+  }
+  .customer-table th,
+  .customer-table td {
+    padding: 5px 2px;
+    font-size: 0.92em;
+  }
+}

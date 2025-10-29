@@ -1,0 +1,78 @@
+.main{
+  background: url('../img/back4.png') no-repeat center center; /* oru image path */
+  background-size: cover;   /* Full screen la stretch aagum */
+  height: fit-content;            /* Full screen height */
+  width: 100%;
+}
+.register-container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #362510;
+  border-radius: 12px;
+  color: #ffd875;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.register-form input {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #d1a124;
+  font-size: 16px;
+  color: #362510;
+}
+
+.register-form input::placeholder {
+  color: #aa8c2c;
+}
+
+.register-form button {
+  width: 100%;
+  background-color: #d1a124;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  color: #362510;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-form button:hover {
+  background-color: #e6b400;
+}
+
+/* Tablet - Medium screens */
+@media (min-width: 600px) and (max-width: 900px) {
+  .register-container {
+    max-width: 500px;
+    padding: 30px;
+  }
+  .register-form input {
+    font-size: 18px;
+    padding: 16px 22px;
+  }
+  .register-form button {
+    font-size: 20px;
+    padding: 18px;
+  }
+}
+
+/* Desktop - Large screens */
+@media (min-width: 901px) {
+  .register-container {
+    max-width: 600px;
+    padding: 35px;
+  }
+  .register-form input {
+    font-size: 20px;
+    padding: 18px 24px;
+  }
+  .register-form button {
+    font-size: 22px;
+    padding: 20px;
+  }
+}

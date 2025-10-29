@@ -1,0 +1,68 @@
+.eo-login-container {
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #362510;
+  border-radius: 12px;
+  color: #ffd875;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.eo-login-form input,
+.eo-login-form button {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin: 12px 0;
+  padding: 14px 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.eo-login-form input {
+  border: 1px solid #d1a124;
+  color: #362510;
+  background-color: #fff;
+}
+
+.eo-login-form input::placeholder {
+  color: #aa8c2c;
+}
+
+.eo-login-form button {
+  background-color: #d1a124;
+  font-weight: bold;
+  color: #362510;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.eo-login-form button:hover {
+  background-color: #e6b400;
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 900px) {
+  .eo-login-container {
+    max-width: 420px;
+    padding: 35px;
+  }
+  .eo-login-form input,
+  .eo-login-form button {
+    font-size: 18px;
+    padding: 16px 26px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+  .eo-login-container {
+    max-width: 480px;
+    padding: 40px;
+  }
+  .eo-login-form input,
+  .eo-login-form button {
+    font-size: 20px;
+    padding: 18px 28px;
+  }
+}
